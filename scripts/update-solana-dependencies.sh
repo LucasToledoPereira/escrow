@@ -42,6 +42,5 @@ crates=(
 
 set -x
 for crate in "${crates[@]}"; do
-  sed -i -e "s#\(${crate} = \"\).*\(\"\)#\1=$solana_ver\2#g" "${tomls[@]}"
+  sed -i -e "s#\(${crate} = \"\).*\(\"\)#\1$solana_ver\2#g" "${tomls[@]}"
 done
-

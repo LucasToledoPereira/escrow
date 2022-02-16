@@ -56,4 +56,3 @@ PATCH
 done
 
 "$here"/update-solana-dependencies.sh "$solana_ver"
-
